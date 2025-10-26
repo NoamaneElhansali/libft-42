@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_count_word(char *s, char c)
+static int	ft_count_word(char *s, char c)
 {
 	int	is_word;
 	int	count;
@@ -32,7 +32,7 @@ int	ft_count_word(char *s, char c)
 	return (count);
 }
 
-char	*ft_get_word(char *start, char *end)
+static char	*ft_get_word(char *start, char *end)
 {
 	return (ft_substr(start, 0, end - start));
 }

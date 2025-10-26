@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_numlen(long int a)
+static int	ft_numlen(long int a)
 {
 	int	len;
 
