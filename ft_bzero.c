@@ -6,7 +6,7 @@
 /*   By: nelhansa <nelhansa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:32:15 by nelhansa          #+#    #+#             */
-/*   Updated: 2025/10/15 13:34:45 by nelhansa         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:45:48 by nelhansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -17,7 +17,7 @@ void	ft_bzero(void *s, size_t n)
 
 	i = 0;
 	if (!s)
-		return;
+		return ;
 	while (i < n)
 	{
 		((unsigned char *)s)[i] = (char)0;
