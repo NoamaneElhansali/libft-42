@@ -9,7 +9,7 @@
 /*   Updated: 2025/10/27 17:45:48 by nelhansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

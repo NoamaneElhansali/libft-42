@@ -65,7 +65,7 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (s > tmp)
 			ptr[i++] = ft_get_word((char *)tmp, (char *)s);
-		if (!ptr[i - 1])
+		if (i > 0 && !ptr[i - 1])
 			return (ft_free_split(ptr, i - 1), NULL);
 	}
 	ptr[i] = NULL;

@@ -35,8 +35,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	while (*(s1 + i) && ft_is_set((char)*(s1 + i), (char *)set))
 		i++;
+	if (s1[i] == '\0')
+		return (ft_strdup(""));
 	j = ft_strlen(s1) - 1;
-	while (*(s1 + j) && ft_is_set((char)*(s1 + j), (char *)set))
+	while (j > i && ft_is_set((char)*(s1 + j), (char *)set))
 		j--;
 	ptr = malloc((j - i + 2) * sizeof(char));
 	if (!ptr)

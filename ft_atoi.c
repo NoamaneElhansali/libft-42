@@ -9,6 +9,8 @@
 /*   Updated: 2025/10/17 22:38:58 by nelhansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
+
 int	ft_atoi(const char *nptr)
 {
 	long int	numbre;
@@ -18,7 +20,7 @@ int	ft_atoi(const char *nptr)
 	positive = 1;
 	while ((*nptr >= '\t' && *nptr <= '\r') || *nptr == ' ')
 		nptr++;
-	while (*nptr == '-' || *nptr == '+')
+	if (*nptr == '-' || *nptr == '+')
 	{
 		if (*nptr == '-')
 			positive = -positive;

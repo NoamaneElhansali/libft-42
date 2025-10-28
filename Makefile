@@ -29,8 +29,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-bonus: $(OBJBONUS)
-	ar rcs $(NAME) $(OBJBONUS)
+bonus: $(OBJ) $(OBJBONUS)
+	ar rcs $(NAME) $(OBJBONUS) $(OBJ)
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@

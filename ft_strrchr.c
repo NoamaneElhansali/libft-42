@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)end);
 		end--;
 	}
-	if (*end == c)
+	if (*end == (unsigned char)c)
 		return ((char *)end);
 	return (NULL);
 }
