@@ -6,7 +6,7 @@
 #    By: nelhansa <nelhansa@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 14:54:21 by nelhansa          #+#    #+#              #
-#    Updated: 2025/10/24 15:02:48 by nelhansa         ###   ########.fr        #
+#    Updated: 2025/10/30 18:39:14 by nelhansa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -44,3 +44,4 @@ fclean: clean
 re: fclean all
 
 .PHONY:	all clean fclean re bonus
+.SECONDARY: $(OBJ) $(OBJBONUS)
