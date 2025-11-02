@@ -4,6 +4,7 @@
 Le projet **Libft** consiste à recréer certaines fonctions standard de la librairie C (`libc`) ainsi que quelques fonctions supplémentaires pour manipuler des chaînes de caractères, des tableaux et la mémoire. Toutes les sources, headers et le Makefile sont dans le même dossier.
 
 ## Structure du projet
+```bash
 libft/
 ├── ft_strlen.c
 ├── ft_strcpy.c
@@ -31,7 +32,7 @@ libft/
 ├── libft.h
 ├── libft.a # généré par Makefile
 └── Makefile
-
+```
 ## Compilation
 ```bash
 make        # compile la librairie
